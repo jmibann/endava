@@ -1,0 +1,792 @@
+* {
+    box-sizing : border-box;
+    font-family:  'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.01em;
+}
+
+.menuContainer {
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+}
+span.btnFont{
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+#alineandoBtn{
+    display: block;
+    margin: 0 auto;
+}
+.centrado {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    align-content: center;
+}
+
+.boton{
+    background-color: #DE411B
+}
+tr.grey{
+    background-color: rgba(155, 180, 190, 0.1);
+}
+tr.white{
+    background-color: white;
+}
+
+.checked {
+    color:  #DE411B;
+  }
+
+.header{
+    /* border-bottom: 1px solid #DE411B; */
+    /* background-color: #DE411B; */
+    height: 85px;
+    padding: 8px;
+    padding-bottom: 2%;
+}
+.headerDisplay{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;  
+
+}
+#trashUser{
+    cursor: pointer;
+    width: 2em;  
+    display: block;
+    margin: 0 auto; 
+}
+.iconHeader{
+    justify-self: end;
+}
+.formLogin {
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.divito{
+    margin-top: 20px;
+    display: grid;
+}
+.mitadReport{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    margin: 20px auto;
+}
+h2.borde.New{
+    border: 2px solid #EC6861;
+    border-radius: 20px;
+}
+h2.borde.Pending.Tech{
+    border: 2px solid #FFD029;
+    border-radius: 20px;
+}
+h2.borde.Pending.HR{
+    border: 2px solid #FFD029;
+    border-radius: 20px;
+}
+h2.borde.Approved{
+    border: 2px solid #0EDD4D;
+    border-radius: 20px;
+}
+h2.borde.Rejected{
+    border: 2px solid #DD0E0E;
+    border-radius: 20px;
+}
+h2.borde.Tech.Approved{
+    border: 2px solid #0EB8DD;
+    border-radius: 20px;
+}
+#infoCandHR{
+    margin-top: 40px;
+}
+#trashUser:hover{
+    transform: scale(1.2)
+}
+
+.containerTrash{
+    float: right
+}
+#HRtextarea{
+    width: 90vw;
+    height: 20vh;
+    border: 1px solid black;
+}
+.mainLogin{
+    margin-top: 5%;
+}
+.topLogin{
+    margin-top: 3%;
+}
+
+.imgLogin{
+    width: 30%;
+}
+.imgHome{
+    width: 200px;
+    justify-content: center;
+    margin:10% 10% 5% 10%;
+}
+
+#loginh1{
+    color: #DE411B; 
+    margin: 0px;
+}
+
+.botonLogin {
+    width: 100%; 
+    margin: 20px auto;
+    font-size: 30px;
+    background-color: #DE411B
+}
+.headerLogin{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.testNew{
+    position: absolute;
+    width: 400px;
+    height: 236px;
+    left: 40px;
+    top: 207px;
+    resize: none;
+
+    background: rgba(155, 180, 190, 0.1);
+}
+.homeBtn{
+    width: 50px;
+    height: 50px;
+}
+.homeDisplay{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+}
+.botonHome{
+    background: #FFFFFF;
+    border: 1px solid #DE411C;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+#botonHeaderLogOut{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.botonHome:hover{
+    text-decoration-line: none;
+}
+.homeDIV{
+    display: grid;
+    margin: 20px;
+}
+.logoAbajo{
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 7px;
+    text-align: center
+}
+#imgHeader{
+    width: 40px; 
+    height: 40px; 
+    margin-left: 30px;
+}
+#headerName{
+    font-size: 20px;
+    margin-left: 15px;
+    vertical-align: bottom;
+    text-transform: uppercase;
+}
+.btnLogOut{
+    border: 2px solid black;
+     background-color: #DE411B;
+     border-radius: 30px;
+     /* padding: 15px; */
+}
+.titHome{
+    text-align: center;
+    padding: 1%;
+}
+.tableHeading{
+    font-size: 1.5em; 
+    text-align: center;
+}
+table.table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+button#appReport{
+    border: 2px solid #0EDD4D;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+button#appReport:hover{
+    background-color: #0EDD4D;
+}
+#rejReport{
+    border: 2px solid #DD0E0E;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+#pendReport{
+    border: 2px solid #FFD029;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+#pendReport:hover{
+    background-color: #FFD029
+}
+#rejReport:hover{
+    background-color: #DD0E0E
+}
+.singleRow{
+    width: 90%;
+    margin: 0 auto;
+}
+.inputSearch{
+    font-size: 1.5em;
+    text-align: left
+}
+#textCheckBox{
+    padding-left: 10px; 
+}
+#checkboxIsAdmin{
+    padding-bottom: 35px;
+    margin-left: -10px; 
+}
+.selectTag{
+    margin: 8px 5px;
+    padding: 0px 4px;
+}
+div.gridDot{
+    border: 3px solid black;
+    display: inline-block;
+    border-radius: 30px;
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+}
+#candStatus{
+    font-size: 0.8em;
+}
+div.gridDot.New{
+    background-color: #FFD099;
+}
+div.gridDot.Pending{
+    background-color: #FFD029;
+}
+div.gridDot.Approved{
+    background-color: #0EDD4D;
+}
+div.gridDot.Rejected{
+    background-color: #DD0E0E;
+}
+div.gridDot.Tech.Approved{
+    background-color: #0EB8DD;
+}
+#tagsDisplay{
+    display: inline-grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+.subTitles{
+    font-size: 2em; 
+    margin-left: 15px; 
+    margin-top: 10px;
+}
+.addTag{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#addTagBtn{
+    margin: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(17, 102, 49);
+    color: white;
+}
+form h5 {
+    align-self: center;
+    text-align: center;
+}
+#tagContainer{
+    margin: 15px 25px;
+    border: 2px solid #DE411B;
+    border-radius: 20px;
+}
+#addQuestBtn{
+    margin-right: 35px;
+    padding-bottom: 20px;
+    width: 60px;
+}
+.questionTextbox{
+    width: 96%;
+    margin: 10px 20px;
+    height: 90px; 
+    font-size: 1.5em;
+}
+.btnQuest{
+    width: 100%; 
+    padding: 20px; 
+    font-size: 1.5em;
+    margin: 30px 30px; 
+}
+.assignOff{
+    display: none;
+}
+.subBtn{
+    padding: 10px;
+    background-color:white;
+    border-radius: 30px;
+    border: 1px solid #DE411B;
+}
+.subBtn:hover{
+    background-color: #DE411B;
+}
+.assignUser{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 60%;
+    margin: 40px auto;
+}
+#infoCandi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 20px;
+}
+.radioScale{
+    transform: scale(1.5);
+}
+#actions{
+    margin: 20px 20px;
+}
+#botonesHR{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+.ActionsBotonesNaranja{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #DE411B;
+    background-color: #DE411B
+}
+.masGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ActionsBotonesBlanco{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #DE411B;
+    background-color: white;
+}
+.ActionsBotonesBlanco:hover{
+    background-color: #DE411B;
+}
+div.tableDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+}
+div.tableDivi{
+    display: block;
+    margin: 0 auto;
+}
+.ActionsBotonesNaranja:hover{
+    background-color: white;
+}
+button.ActionsBotones{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.addcand{
+    text-align: right;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    padding: 10px;
+}
+
+
+.btn-primaryList{
+    width: 100%
+
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.form-control{
+    text-align: left;
+    margin: 10px;
+}
+
+.list-group-item-action{
+    cursor: pointer
+}
+#filterTag{
+    width: 90%;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 30px;
+    margin: 5% auto;
+    border: 1px solid black;
+}
+#filterTag:focus{
+    outline-width: 0;
+    border: 2px solid #DE411C;
+}
+#addTagBton{
+    margin: 10%;
+}
+#formCand{
+    margin-left: 5px;
+    margin-top: 60px
+}
+#addTagInput{
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    border: none;
+    border-bottom: 1px solid black;
+}
+#addTagInput:focus {
+    outline-width: 0;
+    border-bottom: 3px solid #DE411B; 
+}
+#centeredCandTags{
+    margin: 30px auto;
+    display: block;
+    width: 95%;
+    padding: 25px;
+    border: 2px solid #DE411B;
+    border-radius: 30px;
+}
+strong{
+    font-size: 1.2em;
+}
+.statusReport{
+    font-size: 1.5em;
+}
+strong.New{
+    color: #EC6861;
+}
+strong.Pending.HR{
+    color: #FFD029;
+}
+strong.Pending.Tech{
+    color: #FFD029;
+}
+strong.Approved{
+    color: #0EDD4D;
+}
+strong.Rejected{
+    color: #DD0E0E;
+}
+strong.Tech{
+    color: #0EB8DD;
+}
+span.New{
+    color: #EC6861;
+}
+span.Pending.Tech{
+    color: #FFD029;
+}
+span.Pending.HR{
+    color: #FFD029;
+}
+span.Approved{
+    color: #0EDD4D;
+}
+span.Rejected.Tech{
+    color: #DD0E0E;
+}
+span.Rejected.HR{
+    color: #DD0E0E;
+}
+span.Tech.Approved{
+    color: #0EB8DD;
+}
+.answersHR{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+.answerBox{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+a{
+    font-size: 1.3em;
+    text-align: left;
+}
+.thirdGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#leftSideReport{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+strong.questionHR{
+    font-size: 1.7em;
+}
+
+@media (min-width: 992px){
+    .boton:hover{
+        background-color: #EC6861;
+    }
+    .botonHome:hover{
+        background-color: #DE411B;   
+    }
+    
+    .titHomeForms{
+        color: #DE411B; 
+        padding-top: 25px;
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 1.8em;
+    }
+    .addUser{
+        font-size: 1.3em;
+    }
+    .halfGrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr
+    
+    }
+    
+}
+@media (max-width: 992px) {
+    .ActionsBotonesBlanco{
+        border: 2px solid #DE411B;
+    }
+    strong{
+        font-size: 1.5em;
+    }
+    .masGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    strong.questionHR{
+        font-size: 3em;
+    }
+    .probandoModal{
+        display: contents;
+        font-size: 2.5em;
+    }
+    .textModal{
+        font-size: 2.5em;
+    }
+    .probando2{
+        font-size: 3em; 
+    }
+    #addQuestBtn{
+        width: 120px;
+    }
+    .btnQuest{
+        font-size: 2em;
+    }
+    .questionTextbox{
+        height: 190px;
+        width: 96%;
+        margin: 10px 20px;
+        font-size: 1.5em;
+    }
+    .inputSearch{
+        font-size: 2.5em;
+    }
+    .tableHeading{
+        font-size: 2.3em;
+        text-align: left; 
+    }
+    #addTagBtn{
+        font-size: 2em;
+    }
+    #boxTitle{
+        font-size: 2em;
+    }
+    .selectTag{
+        font-size: 2em;
+    }
+    #tagBox{
+        font-size: 2em;
+    }
+    .loginLabel{
+        font-size: 2.5em;
+        margin-top: 25px;
+    }
+    .subTitles{
+        font-size: 3em; 
+        margin-left: 15px; 
+        margin-top: 10px;
+    }
+    div.leftHeader{
+        display:inline-flex;
+    }
+    div.iconHeader{
+        display: inline-flex;
+    }
+    .formLogin{
+        font-size: 70px;
+        width: 100%;
+        padding: 5%;
+    } 
+    .inputLogin{
+        font-size: 60px;
+        border: 1px solid black;
+    }
+    .botonLogin{
+        padding: 5%;
+        margin-top: 10%;
+        font-size: 60px;
+        border-radius: 20px;
+    }
+    .imgLogin{
+        width: 50%;
+    }
+    .headerLogin{
+        margin-bottom: 7%;
+    }
+    #loginh1{
+        font-size: 60px;
+    }
+    .botonHome{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 10%;
+        border-radius: 20px;
+        font-size: 50px;
+        justify-content: center;
+        padding: 55px 0px;
+        background: #FFFFFF;
+        border: 3px solid #DE411B;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+    .homeDisplay{
+        width: 80%;
+    }
+    .imgHome{
+        width: 400px;
+    }
+    .header{
+        /* border-bottom: 1px solid black; */
+        display: block;
+        /* background-color: #DE411B; */
+        height: 150px;
+        padding: 8px 
+    }
+    #imgHeader{
+        width: 20%; 
+        height: 20%; 
+    }
+    #headerName{
+        font-size: 3em;
+        margin-bottom: 15px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        align-self: flex-end;
+    }
+    .btnLogOut{
+        border: 1px solid black;
+        background-color: #DE411B;
+        width: 250px;
+        height: 80px;
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .titHome{
+        font-size: 90px;
+        padding: 25px;
+        text-align: center;
+    }
+    .formSpace{
+        padding: 15px;
+    }
+    .formUser{
+        font-size: 65px;
+        padding: 10px 35px;
+    }
+    .tiny{
+        font-size: 40px;
+    }
+    #belongsTo{
+        font-size: 65px;
+        padding: 20px;
+    }
+    .radioScale{
+        transform: scale(4);
+    }
+    .labelSpacing{
+        padding: 40px;
+    }
+    #checkBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+    }
+    #textCheckBox{
+        padding-left: 40px; 
+        padding-top: 30px; 
+    }
+    .homeBtn{
+        width:100px;
+        height: 100px;
+        margin-top: 30px;
+    }
+    #botonHeaderLogOut{
+        margin-right: 10px;
+    }
+    .addUser{
+        font-size: 0.8em;
+    }
+    .titHomeForms{
+        color: #DE411B; 
+        padding-top: 25px;
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 1.8em;
+    }
+    #checkboxIsAdmin{
+        padding-bottom: 35px; 
+        margin-left: 35px;
+    }
+}
