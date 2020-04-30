@@ -19,7 +19,7 @@
         "express": "^4.16.4",
         "express-session": "^1.15.6",
         "fs": "0.0.1-security",
-        "jquery": "^1.9.1",
+        "jquery": "^3.5.0",
         "morgan": "^1.9.1",
         "net": "^1.0.2",
         "nodemon": "^1.18.10",
